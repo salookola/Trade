@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - build/zekrshomar-apk-20260629
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'zekrshomar/**'
+      - '.github/workflows/build-zekrshomar.yml'
 
 permissions:
   contents: read
